@@ -1,7 +1,7 @@
 from flask import (render_template, Blueprint, g, redirect,
                    request, current_app, abort, url_for)
 from flask_babel import _
-from app import app
+from myApp import app
 
 multilingual = Blueprint('multilingual', __name__,
                          template_folder='templates', url_prefix='/<lang_code>')
@@ -53,6 +53,7 @@ def index():
 
 @multilingual.route('/cake', defaults={'lang_code': 'en'})
 @multilingual.route('/kuchen', defaults={'lang_code': 'de'})
+@multilingual.route('/πίτα', defaults={'lang_code': 'el'})
 @multilingual.route('/gateau', defaults={'lang_code': 'fr'})
 def cake():
     return render_template('multilingual/cake.html', title=_('The Cake is a Lie'))

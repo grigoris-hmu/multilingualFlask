@@ -8,19 +8,18 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 # import and register blueprints
-from app.blueprints.multilingual import multilingual
+from myApp.blueprints.multilingual import multilingual
 app.register_blueprint(multilingual)
 
 # set up babel
-babel = Babel(app)
-
-
-@babel.localeselector
 def get_locale():
     if not g.get('lang_code', None):
         g.lang_code = request.accept_languages.best_match(
             app.config['LANGUAGES']) or app.config['LANGUAGES'][0]
     return g.lang_code
+
+babel = Babel(app)
+babel.init_app(app, locale_selector=get_locale)
 
 
 @app.route('/')
