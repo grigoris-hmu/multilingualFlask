@@ -26,4 +26,4 @@ babel.init_app(app, locale_selector=get_locale)
 def home():
     if not g.get('lang_code', None):
         get_locale()
-    return redirect(url_for('multilingual.index'))
+    return redirect(url_for('multilingual.root'))

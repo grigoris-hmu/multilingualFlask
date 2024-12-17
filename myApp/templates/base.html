@@ -13,7 +13,7 @@
         <a href="{{ url_for(request.endpoint, lang_code='el') }}">el</a>
         <hr>
         <div>Microblog: 
-            <a href="{{ url_for('multilingual.index') }}">{{_('Home')}}</a>&nbsp;
+            <a href="{{ url_for('multilingual.root') }}">{{_('Home')}}</a>&nbsp;
             <a href="{{ url_for('multilingual.cake') }}">{{_('Cake')}}</a></div>
         <hr>
         {% block content %}{% endblock %}

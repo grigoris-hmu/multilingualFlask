@@ -36,7 +36,7 @@ def before_request():
 
 @multilingual.route('/')
 @multilingual.route('/index')
-def index():
+def root():
     user = {'username': 'Miguel'}
     posts = [
         {
@@ -48,7 +48,7 @@ def index():
             'body': _('The Avengers movie was so cool!')
         }
     ]
-    return render_template('multilingual/index.html', title=_('Home'), user=user, posts=posts)
+    return render_template('ml/index.html', title=_('Home'), user=user, posts=posts)
 
 
 @multilingual.route('/cake', defaults={'lang_code': 'en'})
@@ -56,4 +56,4 @@ def index():
 @multilingual.route('/πίτα', defaults={'lang_code': 'el'})
 @multilingual.route('/gateau', defaults={'lang_code': 'fr'})
 def cake():
-    return render_template('multilingual/cake.html', title=_('The Cake is a Lie'))
+    return render_template('ml/cake.html', title=_('The Cake is a Lie'))
