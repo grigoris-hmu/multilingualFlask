@@ -32,7 +32,7 @@ https://python-babel.github.io/flask-babel/
 ## Run mini How To
 
 ### Clone repository
-clone https://github.com/grigoris-hmu/multilingualFlask.git<br/>
+git clone https://github.com/grigoris-hmu/multilingualFlask.git<br/>
 cd smart-plant-care-test/
 
 ### Initialize Python virtual enviroment
