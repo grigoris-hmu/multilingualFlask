@@ -53,7 +53,8 @@ def root():
 
 @multilingual.route('/cake', defaults={'lang_code': 'en'})
 @multilingual.route('/kuchen', defaults={'lang_code': 'de'})
-@multilingual.route('/πίτα', defaults={'lang_code': 'el'})
 @multilingual.route('/gateau', defaults={'lang_code': 'fr'})
+@multilingual.route('/πίτα', defaults={'lang_code': 'el'})
+@multilingual.route('/ケーキ', defaults={'lang_code': 'ja'})
 def cake():
     return render_template('ml/cake.html', title=_('The Cake is a Lie'))

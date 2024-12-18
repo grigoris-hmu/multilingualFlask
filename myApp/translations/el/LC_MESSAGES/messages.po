@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-15 16:19+0200\n"
-"PO-Revision-Date: 2024-12-15 16:19+0200\n"
+"POT-Creation-Date: 2024-12-19 00:11+0200\n"
+"PO-Revision-Date: 2024-12-19 00:12+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: el\n"
 "Language-Team: el <LL@li.org>\n"
@@ -26,48 +26,36 @@ msgstr "Όμορφη μέρα στο Πόρτλαντ!"
 msgid "The Avengers movie was so cool!"
 msgstr "Η ταινία Avengers ήταν τόσο ωραία!"
 
-#: myApp/blueprints/multilingual/routes.py:51
-#: myApp/templates/base.html:16
+#: myApp/blueprints/multilingual/routes.py:51 myApp/templates/base.html:17
 msgid "Home"
 msgstr "Αρχική σελίδα"
 
-#: myApp/blueprints/multilingual/routes.py:59
+#: myApp/blueprints/multilingual/routes.py:60
 msgid "The Cake is a Lie"
 msgstr "Το κέικ είναι ένα ψέμα"
 
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:4
+#: myApp/blueprints/multilingual/templates/ml/cake.html:4
 msgid "Hi, User!"
 msgstr "Γεια σου, χρήστη!"
 
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:6
+#: myApp/blueprints/multilingual/templates/ml/cake.html:6
 msgid "I promise you that there will be "
 msgstr "Σας υπόσχομαι ότι θα υπάρξουν "
 
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:6
+#: myApp/blueprints/multilingual/templates/ml/cake.html:6
 msgid "cake"
 msgstr "κέικ"
 
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:6
+#: myApp/blueprints/multilingual/templates/ml/cake.html:6
 msgid " at the end of this article, so keep on reading!"
 msgstr " στο τέλος αυτού του άρθρου, οπότε συνεχίστε να διαβάζετε!"
 
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:7
-msgid "text to be translated"
-msgstr "κείμενο προς μετάφραση"
 
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:7
-msgid " today is a beautiful day"
-msgstr " σήμερα είναι μια όμορφη μέρα"
-
-#: myApp/blueprints/multilingual/templates/multilingual/cake.html:7
-msgid " my name is nikos"
-msgstr " Το όνομά μου είναι Νίκος"
-
-#: myApp/blueprints/multilingual/templates/multilingual/index.html:4
+#: myApp/blueprints/multilingual/templates/ml/index.html:4
 msgid "Hi, "
 msgstr "Γεια σας, "
 
-#: myApp/blueprints/multilingual/templates/multilingual/index.html:6
+#: myApp/blueprints/multilingual/templates/ml/index.html:6
 msgid " says: "
 msgstr " λέει: "
 
@@ -75,6 +63,6 @@ msgstr " λέει: "
 msgid "Welcome to Microblog"
 msgstr "Καλώς ήρθατε στο Μικροϊστολόγιο"
 
-#: myApp/templates/base.html:17
+#: myApp/templates/base.html:18
 msgid "Cake"
 msgstr "Πίτα"
