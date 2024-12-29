@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 # import and register blueprints
-from myApp.blueprints.multilingual import multilingual
-app.register_blueprint(multilingual)
+from myApp.l10n import l10n
+app.register_blueprint(l10n)
 
 # set up babel
 def get_locale():
@@ -26,4 +26,4 @@ babel.init_app(app, locale_selector=get_locale)
 def home():
     if not g.get('lang_code', None):
         get_locale()
-    return redirect(url_for('multilingual.root'))
+    return redirect(url_for('l10n.root'))

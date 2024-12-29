@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-19 00:11+0200\n"
-"PO-Revision-Date: 2024-12-19 00:12+0200\n"
+"POT-Creation-Date: 2024-12-30 00:52+0200\n"
+"PO-Revision-Date: 2024-12-30 00:54+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
@@ -18,43 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: myApp/blueprints/multilingual/routes.py:44
+#: myApp/l10n/routes.py:44
 msgid "Beautiful day in Portland!"
 msgstr "Prachtige dag in Portland!"
 
-#: myApp/blueprints/multilingual/routes.py:48
+#: myApp/l10n/routes.py:48
 msgid "The Avengers movie was so cool!"
 msgstr "The Avengers movie was so cool!"
 
-#: myApp/blueprints/multilingual/routes.py:51 myApp/templates/base.html:17
+#: myApp/l10n/routes.py:51 myApp/templates/base.html:17
 msgid "Home"
 msgstr "Home"
 
-#: myApp/blueprints/multilingual/routes.py:60
+#: myApp/l10n/routes.py:60
 msgid "The Cake is a Lie"
 msgstr "De taart is een leugen"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:4
+#: myApp/l10n/templates/ml/cake.html:4
 msgid "Hi, User!"
 msgstr "Hallo, gebruiker!"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:6
+#: myApp/l10n/templates/ml/cake.html:6
 msgid "I promise you that there will be "
 msgstr "Ik beloof je dat er"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:6
+#: myApp/l10n/templates/ml/cake.html:6
 msgid "cake"
 msgstr "taart"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:6
+#: myApp/l10n/templates/ml/cake.html:6
 msgid " at the end of this article, so keep on reading!"
 msgstr " aan het einde van dit artikel, dus blijf lezen!"
 
-#: myApp/blueprints/multilingual/templates/ml/index.html:4
+#: myApp/l10n/templates/ml/index.html:4
 msgid "Hi, "
 msgstr "Hoi, "
 
-#: myApp/blueprints/multilingual/templates/ml/index.html:6
+#: myApp/l10n/templates/ml/index.html:6
 msgid " says: "
 msgstr " zegt: "
 
@@ -65,4 +65,5 @@ msgstr "Welkom bij Microblog"
 #: myApp/templates/base.html:18
 msgid "Cake"
 msgstr "Taart"
+
 

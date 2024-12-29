@@ -3,21 +3,21 @@ from flask import (render_template, Blueprint, g, redirect,
 from flask_babel import _
 from myApp import app
 
-multilingual = Blueprint('multilingual', __name__,
+l10n = Blueprint('l10n', __name__,
                          template_folder='templates', url_prefix='/<lang_code>')
 
 
-@multilingual.url_defaults
+@l10n.url_defaults
 def add_language_code(endpoint, values):
     values.setdefault('lang_code', g.lang_code)
 
 
-@multilingual.url_value_preprocessor
+@l10n.url_value_preprocessor
 def pull_lang_code(endpoint, values):
     g.lang_code = values.pop('lang_code')
 
 
-@multilingual.before_request
+@l10n.before_request
 def before_request():
     if g.lang_code not in current_app.config['LANGUAGES']:
         adapter = app.url_map.bind('')
@@ -34,8 +34,8 @@ def before_request():
             abort(404)
 
 
-@multilingual.route('/')
-@multilingual.route('/index')
+@l10n.route('/')
+@l10n.route('/index')
 def root():
     user = {'username': 'Miguel'}
     posts = [
@@ -48,13 +48,13 @@ def root():
             'body': _('The Avengers movie was so cool!')
         }
     ]
-    return render_template('ml/index.html', title=_('Home'), user=user, posts=posts)
+    return render_template('index.html', title=_('Home'), user=user, posts=posts)
 
 
-@multilingual.route('/cake', defaults={'lang_code': 'en'})
-@multilingual.route('/kuchen', defaults={'lang_code': 'de'})
-@multilingual.route('/gateau', defaults={'lang_code': 'fr'})
-@multilingual.route('/πίτα', defaults={'lang_code': 'el'})
-@multilingual.route('/ケーキ', defaults={'lang_code': 'ja'})
+@l10n.route('/cake', defaults={'lang_code': 'en'})
+@l10n.route('/kuchen', defaults={'lang_code': 'de'})
+@l10n.route('/gateau', defaults={'lang_code': 'fr'})
+@l10n.route('/πίτα', defaults={'lang_code': 'el'})
+@l10n.route('/ケーキ', defaults={'lang_code': 'ja'})
 def cake():
-    return render_template('ml/cake.html', title=_('The Cake is a Lie'))
+    return render_template('cake.html', title=_('The Cake is a Lie'))

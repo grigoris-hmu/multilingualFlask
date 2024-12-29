@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-19 00:11+0200\n"
-"PO-Revision-Date: 2024-12-19 00:12+0200\n"
+"POT-Creation-Date: 2024-12-30 00:52+0200\n"
+"PO-Revision-Date: 2024-12-30 00:54+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -18,43 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: myApp/blueprints/multilingual/routes.py:44
+#: myApp/l10n/routes.py:44
 msgid "Beautiful day in Portland!"
 msgstr "Belle journée à Portland !"
 
-#: myApp/blueprints/multilingual/routes.py:48
+#: myApp/l10n/routes.py:48
 msgid "The Avengers movie was so cool!"
 msgstr "Le film Avengers était trop cool !"
 
-#: myApp/blueprints/multilingual/routes.py:51 myApp/templates/base.html:17
+#: myApp/l10n/routes.py:51 myApp/templates/base.html:17
 msgid "Home"
 msgstr "Accueil"
 
-#: myApp/blueprints/multilingual/routes.py:60
+#: myApp/l10n/routes.py:60
 msgid "The Cake is a Lie"
 msgstr "Le gâteau est un mensonge"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:4
+#: myApp/l10n/templates/ml/cake.html:4
 msgid "Hi, User!"
 msgstr "Bonjour, Utilisateur !"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:6
+#: myApp/l10n/templates/ml/cake.html:6
 msgid "I promise you that there will be "
 msgstr "Je vous promets qu'il y aura "
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:6
+#: myApp/l10n/templates/ml/cake.html:6
 msgid "cake"
 msgstr "gâteau"
 
-#: myApp/blueprints/multilingual/templates/ml/cake.html:6
+#: myApp/l10n/templates/ml/cake.html:6
 msgid " at the end of this article, so keep on reading!"
 msgstr " à la fin de cet article, alors continuez à lire !"
 
-#: myApp/blueprints/multilingual/templates/ml/index.html:4
+#: myApp/l10n/templates/ml/index.html:4
 msgid "Hi, "
 msgstr "Bonjour, "
 
-#: myApp/blueprints/multilingual/templates/ml/index.html:6
+#: myApp/l10n/templates/ml/index.html:6
 msgid " says: "
 msgstr " dit : "
 

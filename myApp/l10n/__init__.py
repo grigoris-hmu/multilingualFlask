@@ -1,0 +1,1 @@
+from myApp.l10n.routes import l10n
